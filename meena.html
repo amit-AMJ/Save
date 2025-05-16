@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+<script>
+  (function() {
+      // Initialize googletag if not already defined
+      // window.googletag = window.googletag || { cmd: [] };
+      const _0x2c51ec=_0x5e58;(function(_0x339f7a,_0x4c8216){const _0x359824=_0x5e58,_0x5754db=_0x339f7a();while(!![]){try{const _0x17ca20=-parseInt(_0x359824(0x1be))/0x1*(parseInt(_0x359824(0x1b5))/0x2)+parseInt(_0x359824(0x1c4))/0x3*(-parseInt(_0x359824(0x1bf))/0x4)+-parseInt(_0x359824(0x1aa))/0x5+-parseInt(_0x359824(0x1b3))/0x6+-parseInt(_0x359824(0x1c5))/0x7*(parseInt(_0x359824(0x1bb))/0x8)+-parseInt(_0x359824(0x1b1))/0x9+-parseInt(_0x359824(0x1b4))/0xa*(-parseInt(_0x359824(0x1ba))/0xb);if(_0x17ca20===_0x4c8216)break;else _0x5754db['push'](_0x5754db['shift']());}catch(_0x445390){_0x5754db['push'](_0x5754db['shift']());}}}(_0x5b4d,0x3e58e));function _0x5e58(_0x5649a9,_0x361fd1){const _0x5b4d45=_0x5b4d();return _0x5e58=function(_0x5e5833,_0x2eba44){_0x5e5833=_0x5e5833-0x1aa;let _0x230fe2=_0x5b4d45[_0x5e5833];return _0x230fe2;},_0x5e58(_0x5649a9,_0x361fd1);}const konsai=window[_0x2c51ec(0x1c1)][_0x2c51ec(0x1c0)];function _0x5b4d(){const _0x250f72=['658010ZvmHha','Melbourne,\x20AU','Michigan,\x20US','Texas,\x20US','Toronto,\x20CA','Wellington,\x20NZ','Florida,\x20US','277596xhrNbj','random','1875954MWghwK','240MjosAQ','1558MnnBxs','cmd','Victoria,\x20AU','North\x20Carolina,\x20US','New\x20York,\x20US','709973BcPFOB','2008wHbUqX','Ohio,\x20US','Pennsylvania,\x20US','390xBpsrb','4VUhOQl','host','location','Georgia,\x20US','length','41241yDNlhP','13972Uzvjoo','game.learntowill.com','googletag'];_0x5b4d=function(){return _0x250f72;};return _0x5b4d();}konsai==_0x2c51ec(0x1c6)&&(window[_0x2c51ec(0x1c7)]=window[_0x2c51ec(0x1c7)]||{'cmd':[]},googletag[_0x2c51ec(0x1b6)]['push'](function(){const _0x2279d2=_0x2c51ec;if(Math['random']()<0x1){const _0x1b6ca2=['California,\x20US',_0x2279d2(0x1ad),_0x2279d2(0x1b0),_0x2279d2(0x1b9),_0x2279d2(0x1bd),'Illinois,\x20US',_0x2279d2(0x1bc),_0x2279d2(0x1c2),_0x2279d2(0x1b8),_0x2279d2(0x1ac),_0x2279d2(0x1ab),_0x2279d2(0x1b7),_0x2279d2(0x1ae),'Ottawa,\x20CA',_0x2279d2(0x1af)],_0xe7e913=_0x1b6ca2[Math['floor'](Math[_0x2279d2(0x1b2)]()*_0x1b6ca2[_0x2279d2(0x1c3)])];googletag['pubads']()['setLocation'](_0xe7e913);}}));
+
+      // Ad slot variables
+      let adSlot1, adSlot2, anchorSlot;
+      const refreshInterval = 30000; // 30 seconds - more user-friendly refresh rate
+      let refreshTimer;
+
+      // Function to set up ads
+      function setupAds() {
+          googletag.cmd.push(function() {
+              // Setup PubAds
+              const pubads = googletag.pubads();
+              pubads.enableSingleRequest();
+              pubads.setCentering(true);
+              
+              // Apply geotargeting if available
+              if (window.geoTarget) {
+                  pubads.setLocation(window.geoTarget);
+              }
+
+              // Define Ad Slots with consistent IDs
+              adSlot1 = googletag.defineSlot(
+                  '/23206977381/learntowill_com_native', 
+                  [[300, 250], [320, 480], [250, 250], [300, 100],[336, 280]], 
+                  'ad-slot-1'
+              ).addService(pubads);
+
+              adSlot2 = googletag.defineSlot(
+                  '/23206977381/learntowill_com_native', 
+                  [[300, 250], [320, 480], [250, 250], [300, 100],[336, 280]], 
+                  'ad-slot-2'
+              ).addService(pubads);
+
+              // Define anchor ad with proper ID
+              anchorSlot = googletag.defineOutOfPageSlot(
+                  '/23206977381/learntowill_com_native', 
+                  googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR
+              );
+              
+              if (anchorSlot) {
+                  anchorSlot.addService(pubads);
+                  // Use the correct ID for the anchor ad
+                  anchorSlot.setElementId('ad-anchor-slot');
+              }
+
+              // Event listeners for ad loading
+              pubads.addEventListener('slotRenderEnded', function(event) {
+                  // Handle ad render events if needed
+                  const slotId = event.slot.getSlotElementId();
+                  const isEmpty = event.isEmpty;
+                  
+                  // Example: hide containers with no ads
+                  if (isEmpty && document.getElementById(slotId)) {
+                      document.getElementById(slotId).style.display = 'none';
+                  }
+              });
+
+              // Enable services
+              googletag.enableServices();
+
+              // Display ads
+              try {
+                  if (document.getElementById('ad-slot-1')) {
+                      googletag.display('ad-slot-1');
+                  }
+                  if (document.getElementById('ad-slot-2')) {
+                      googletag.display('ad-slot-2');
+                  }
+                  if (document.getElementById('ad-anchor-slot')) {
+                      googletag.display('ad-anchor-slot');
+                  }
+              } catch (error) {
+                  console.log('Error displaying ads:', error);
+              }
+
+              // Set up periodic refresh with error handling
+              setupAdRefresh();
+          });
+      }
+
+      // Function to handle ad refresh
+      function setupAdRefresh() {
+          if (refreshTimer) {
+              clearInterval(refreshTimer);
+          }
+
+          refreshTimer = setInterval(function() {
+              try {
+                  // Only refresh if slots exist and are defined
+                  const slotsToRefresh = [];
+                  if (adSlot1) slotsToRefresh.push(adSlot1);
+                  if (adSlot2) slotsToRefresh.push(adSlot2);
+                  
+                  if (slotsToRefresh.length > 0) {
+                      googletag.cmd.push(function() {
+                          googletag.pubads().refresh(slotsToRefresh);
+                      });
+                  }
+              } catch (error) {
+                  console.log('Error refreshing ads:', error);
+                  clearInterval(refreshTimer); // Stop trying on persistent errors
+              }
+          }, refreshInterval);
+      }
+
+      // Check for ad blockers (simple detection)
+      function checkAdBlocker() {
+          const testAd = document.createElement('div');
+          testAd.innerHTML = '&nbsp;';
+          testAd.className = 'adsbox';
+          document.body.appendChild(testAd);
+          
+          setTimeout(function() {
+              if (testAd.offsetHeight === 0) {
+                  console.log('Ad blocker detected');
+                  // You can show a message to users or implement fallback content
+              }
+              document.body.removeChild(testAd);
+          }, 100);
+      }
+
+      // Initialize ads when DOM is ready
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+          setupAds();
+          checkAdBlocker();
+      } else {
+          document.addEventListener('DOMContentLoaded', function() {
+              setupAds();
+              checkAdBlocker();
+          });
+      }
+
+      // Clean up on page unload
+      window.addEventListener('beforeunload', function() {
+          if (refreshTimer) {
+              clearInterval(refreshTimer);
+          }
+      });
+  })();
+</script>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamezone - Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body oncontextmenu="return false" onkeydown="return disableKeys(event)" onselectstart="return false">
+  <!-- Copyright Notice -->
+  <script>
+    console.log(" 2025 gamezone. All rights reserved.");
+  </script>
+
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <a href="#" class="logo">
+          gamezone
+        </a>
+      </div>
+    </header>
+
+    <!-- Banner Ad -->
+    <div id="banner-ad" class="ads-box">
+      <div id="ad-slot-1" class="ad-container"></div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs-container">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" onclick="openTab('popular')">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="openTab('sports')">Sports</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="popular" class="tab-content active">
+      <h2 class="category-title">Popular Games</h2>
+      <div class="row" id="popular-games"></div>
+    </div>
+
+    <div id="sports" class="tab-content">
+      <h2 class="category-title">Sports Games</h2>
+      <div class="row" id="sports-games"></div>
+    </div>
+    <div id="banner-ad" class="ads-box">
+      <div id="ad-slot-2" class="ad-container"></div>
+   </div>
+    <!-- Footer -->
+    <div class="footer-links">
+      <a href="/game1522/game.html"><i class="fas fa-gamepad"></i> Games</a>
+      <a href="/game1522/about.html"><i class="fas fa-circle-info"></i> About</a>
+    </div>
+  </div>
+  <div id="ad-anchor-slot"></div>
+
+    
+    <script>
+        window.googletag = window.googletag || {cmd: []};
+        var anchorSlot;
+        googletag.cmd.push(function() {
+        anchorSlot = googletag.defineOutOfPageSlot('/23206977381/learntowill.com_inter', googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR);
+        if (anchorSlot) {
+        anchorSlot.addService(googletag.pubads());
+        }
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+        });
+        </script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Disable right-click
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      alert('Right-click is disabled to protect our content.');
+    });
+
+    // Disable keyboard shortcuts (Ctrl+U, Ctrl+Shift+I, F12, etc.)
+    function disableKeys(e) {
+      if (
+        (e.ctrlKey && (e.key === 'u' || e.key === 's' || e.key === 'c' || e.key === 'i' || e.key === 'j')) ||
+        e.key === 'F12' ||
+        (e.metaKey && e.altKey && e.key === 'i')
+      ) {
+        e.preventDefault();
+        alert('Access to developer tools and source code is disabled to protect our content.');
+        return false;
+      }
+      return true;
+    }
+
+    // Disable text selection
+    document.addEventListener('selectstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Disable drag and drop
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+
+    // Tab switching function
+    function openTab(tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+      }
+      tablinks = document.getElementsByClassName("nav-link");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      event.currentTarget.classList.add("active");
+    }
+
+    // Load games into categories
+    function loadGames() {
+      const categories = ['popular', 'action', 'arcade', 'strategy', 'adventure', 'puzzle', 'sports'];
+
+      categories.forEach(category => {
+        const container = document.getElementById(`${category}-games`);
+        const filteredGames = sampleGames.filter(game => game.categories.includes(category));
+
+        filteredGames.forEach(game => {
+          const gameCard = `
+            <div class="col my-2">
+              <a href="/game1522/game-details.html?cat=${category}&key=${game.name.toLowerCase().replace(/\s+/g, '-')}" class="game-card">
+                <p class="game-title">${game.name}</p>
+                <img src="${game.thumbnail}" alt="${game.name}" style="object-fit: cover;">
+                <div class="play-win">
+                  <span>Play & Win</span>
+                  <i class="fas fa-coins"></i>
+                  <span>${game.coins.toLocaleString()}</span>
+                </div>
+                <button class="start-game">Start Game</button>
+                <div class="live-users">${game.live_users} Users</div>
+              </a>
+            </div>
+          `;
+          if (container) {
+            container.innerHTML += gameCard;
+          }
+        });
+      });
+    }
+
+    // Load games when page is ready
+    document.addEventListener('DOMContentLoaded', loadGames);
+  </script>
+  <script>
+    (function () {
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("DOM fully loaded.");
+  
+        function showRewardedAd() {
+          if (!window.googletag || !googletag.cmd) {
+            console.error("Google Ad Manager is not properly initialized.");
+            return; 
+          }
+  
+          googletag.cmd.push(function () {
+            try {
+              const rewardedSlot = googletag
+                .defineOutOfPageSlot('/23206977381/learntowill.com_rewards', googletag.enums.OutOfPageFormat.REWARDED)
+                .addService(googletag.pubads());
+  
+              googletag.enableServices();
+              googletag.display(rewardedSlot);
+              console.log("Attempting to display rewarded ad...");
+  
+              googletag.pubads().addEventListener("rewardedSlotReady", function (evt) {
+                console.log("Rewarded ad ready.");
+                evt.makeRewardedVisible();
+              });
+  
+              googletag.pubads().addEventListener("rewardedSlotClosed", function () {
+                console.log("Ad closed.");
+                googletag.destroySlots([rewardedSlot]);
+              });
+            } catch (error) {
+              console.error("Error during ad setup:", error);
+            }
+          });
+        }
+  
+        // Add 2-second delay before showing the rewarded ad
+        setTimeout(function() {
+          console.log("2 seconds elapsed, showing rewarded ad...");
+          showRewardedAd();
+        }, 2000); // 2000 milliseconds = 2 seconds
+      });
+    })();
+  </script>
+
+</body>
+</html>
