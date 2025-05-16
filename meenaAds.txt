@@ -1,0 +1,57 @@
+Rewarded	
+
+
+
+
+
+
+"<!-- =========HEAD=============-->
+
+<script async src=""https://securepubads.g.doubleclick.net/tag/js/gpt.js""></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  var interstitialSlot;
+  googletag.cmd.push(function() {
+    interstitialSlot = googletag.defineOutOfPageSlot('/21952429235/sahajanand_credinest.info_rewarded', googletag.enums.OutOfPageFormat.REWARDED);
+    if (interstitialSlot) {
+          interstitialSlot.addService(googletag.pubads());
+          }
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- =========BODY=============-->
+   <script>
+        googletag.cmd.push(function() {
+         googletag.display(interstitialSlot);
+        });
+    </script>"
+
+
+
+
+Native	
+
+
+
+
+
+"<!-- =========HEAD=============-->
+<script async src=""https://securepubads.g.doubleclick.net/tag/js/gpt.js"" crossorigin=""anonymous""></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/21952429235/sahajanand_credinest.info_native', [[1, 1], 'fluid'], 'div-gpt-ad-1747118133523-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- =========BODY=============-->
+<!-- /21952429235/sahajanand_credinest.info_native -->
+<div id='div-gpt-ad-1747118133523-0'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1747118133523-0'); });
+  </script>
+</div>"
