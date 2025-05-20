@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Bank Mutual Funds | Investment Guide</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom orange/brown theme */
+        :root {
+            --primary: #E67E22;  /* Carrot Orange */
+            --secondary: #D35400; /* Pumpkin Orange */
+            --accent: #F39C12;   /* Orange */
+            --light: #FDEBD0;    /* Light Orange */
+            --dark: #7E5109;    /* Brown */
+            --darker: #5D4037;  /* Dark Brown */
+        }
+        
+        /* Smooth transitions */
+        .smooth { transition: all 0.3s ease; }
+        
+        /* Fancy animated cards */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .floating-card {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-amber-50 font-sans">
+    <!-- Floating Help Button -->
+    <div class="fixed bottom-6 right-6">
+        <a href="#contact" class="bg-[var(--primary)] hover:bg-[var(--secondary)] text-white text-sm font-bold py-3 px-4 rounded-full shadow-lg flex items-center smooth transform hover:scale-105">
+            <i class="fas fa-headset mr-2"></i> Help
+        </a>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 max-w-md">
+        <!-- Promo Banner -->
+        <div class="bg-gradient-to-r from-[var(--light)] to-[var(--accent)] p-4 mb-6 rounded-lg text-center border border-[var(--accent)] shadow-md">
+            <p class="text-[var(--darker)] font-medium">
+                <i class="fas fa-gift text-[var(--primary)] mr-1"></i> Get free portfolio review on investments above ₹50,000
+            </p>
+        </div>
+
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-[var(--darker)] mb-2">Bank Mutual Funds</h1>
+            <p class="text-gray-600">Top performing funds from trusted banks</p>
+            <div class="mt-4 flex justify-center space-x-2">
+                <span class="bg-[var(--light)] text-[var(--dark)] text-xs px-2 py-1 rounded-full">
+                    <i class="fas fa-shield-alt mr-1"></i> SEBI Regulated
+                </span>
+                <span class="bg-[var(--light)] text-[var(--dark)] text-xs px-2 py-1 rounded-full">
+                    <i class="fas fa-history mr-1"></i> 10+ Year Data
+                </span>
+            </div>
+        </header>
+
+        <main class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <!-- Bank Mutual Fund Performance Section -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-[var(--darker)] mb-4 flex items-center">
+                    <i class="fas fa-university text-[var(--primary)] mr-2"></i> Top Bank Funds
+                </h2>
+                
+                <!-- SBI Funds Card -->
+                <div class="bg-[var(--light)] p-4 rounded-lg mb-4 border-l-4 border-[var(--primary)] floating-card">
+                    <div class="flex items-center mb-2">
+                        <div>
+                            <h3 class="font-bold text-[var(--dark)]">SBI Mutual Fund</h3>
+                            <p class="text-xs text-gray-600">Assets: ₹5.2 lakh crore | 35+ funds</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-3">
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">1-Year Return</p>
+                            <p class="font-bold text-[var(--primary)]">18.7%</p>
+                        </div>
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">3-Year Return</p>
+                            <p class="font-bold text-[var(--primary)]">14.2%</p>
+                        </div>
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">5-Year Return</p>
+                            <p class="font-bold text-[var(--primary)]">12.8%</p>
+                        </div>
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">Risk Level</p>
+                            <p class="font-bold text-[var(--secondary)]">Moderate</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-3 rounded border border-[var(--accent)]">
+                        <h4 class="font-medium text-[var(--dark)] text-sm mb-1 flex items-center">
+                            <i class="fas fa-star text-[var(--accent)] mr-1"></i> Top Fund: SBI Bluechip Fund
+                        </h4>
+                        <div class="flex justify-between text-xs">
+                            <span class="text-gray-600">Expense Ratio: 0.89%</span>
+                            <span class="text-[var(--primary)]">⭐ 4.5/5</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- HDFC Funds Card -->
+                <div class="bg-[var(--light)] p-4 rounded-lg mb-4 border-l-4 border-[var(--accent)] floating-card">
+                    <div class="flex items-center mb-2">
+                        <div>
+                            <h3 class="font-bold text-[var(--dark)]">HDFC Mutual Fund</h3>
+                            <p class="text-xs text-gray-600">Assets: ₹4.8 lakh crore | 40+ funds</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-3">
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">1-Year Return</p>
+                            <p class="font-bold text-[var(--primary)]">17.3%</p>
+                        </div>
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">3-Year Return</p>
+                            <p class="font-bold text-[var(--primary)]">13.5%</p>
+                        </div>
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">5-Year Return</p>
+                            <p class="font-bold text-[var(--primary)]">11.9%</p>
+                        </div>
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">Risk Level</p>
+                            <p class="font-bold text-[var(--secondary)]">Mod-High</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-3 rounded border border-[var(--accent)]">
+                        <h4 class="font-medium text-[var(--dark)] text-sm mb-1 flex items-center">
+                            <i class="fas fa-star text-[var(--accent)] mr-1"></i> Top Fund: HDFC Top 100 Fund
+                        </h4>
+                        <div class="flex justify-between text-xs">
+                            <span class="text-gray-600">Expense Ratio: 0.92%</span>
+                            <span class="text-[var(--primary)]">⭐ 4.3/5</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ICICI Funds Card -->
+                <div class="bg-[var(--light)] p-4 rounded-lg mb-6 border-l-4 border-[var(--secondary)] floating-card">
+                    <div class="flex items-center mb-2">
+                        <div>
+                            <h3 class="font-bold text-[var(--dark)]">ICICI Prudential MF</h3>
+                            <p class="text-xs text-gray-600">Assets: ₹4.5 lakh crore | 50+ funds</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-3 mb-3">
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">1-Year Return</p>
+                            <p class="font-bold text-[var(--primary)]">16.8%</p>
+                        </div>
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">3-Year Return</p>
+                            <p class="font-bold text-[var(--primary)]">13.1%</p>
+                        </div>
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">5-Year Return</p>
+                            <p class="font-bold text-[var(--primary)]">11.5%</p>
+                        </div>
+                        <div class="bg-white p-2 rounded text-center">
+                            <p class="text-xs text-gray-500">Risk Level</p>
+                            <p class="font-bold text-[var(--secondary)]">Moderate</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-3 rounded border border-[var(--accent)]">
+                        <h4 class="font-medium text-[var(--dark)] text-sm mb-1 flex items-center">
+                            <i class="fas fa-star text-[var(--accent)] mr-1"></i> Top Fund: ICICI Bluechip Fund
+                        </h4>
+                        <div class="flex justify-between text-xs">
+                            <span class="text-gray-600">Expense Ratio: 0.87%</span>
+                            <span class="text-[var(--primary)]">⭐ 4.4/5</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="index.html" class="block text-center bg-[var(--dark)] hover:bg-[var(--darker)] text-white font-bold py-3 px-4 rounded-lg smooth transform hover:scale-[1.02] shadow-md">
+                    <i class="fas fa-chart-bar mr-2"></i> Compare All Bank Funds
+                </a>
+            </section>
+
+            <!-- Historical Returns Section -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-[var(--darker)] mb-4 flex items-center">
+                    <i class="fas fa-chart-line text-[var(--primary)] mr-2"></i> Historical Returns
+                </h2>
+                
+                <div class="bg-[var(--light)] p-4 rounded-lg mb-4">
+                    <h3 class="font-bold text-[var(--dark)] mb-3">10-Year Performance Trends</h3>
+                    
+                    <div class="flex items-center mb-2">
+                        <div class="w-1/4 text-xs text-gray-600">Category</div>
+                        <div class="w-1/4 text-xs text-center text-gray-600">1-Yr</div>
+                        <div class="w-1/4 text-xs text-center text-gray-600">3-Yr</div>
+                        <div class="w-1/4 text-xs text-center text-gray-600">5-Yr</div>
+                    </div>
+                    
+                    <div class="flex items-center py-2 border-b border-[var(--light)]">
+                        <div class="w-1/4 font-medium text-sm">Large Cap</div>
+                        <div class="w-1/4 text-center text-[var(--primary)] font-bold">18.2%</div>
+                        <div class="w-1/4 text-center text-[var(--primary)] font-bold">14.1%</div>
+                        <div class="w-1/4 text-center text-[var(--primary)] font-bold">12.6%</div>
+                    </div>
+                    
+                    <div class="flex items-center py-2 border-b border-[var(--light)]">
+                        <div class="w-1/4 font-medium text-sm">Mid Cap</div>
+                        <div class="w-1/4 text-center text-[var(--primary)] font-bold">22.5%</div>
+                        <div class="w-1/4 text-center text-[var(--primary)] font-bold">16.8%</div>
+                        <div class="w-1/4 text-center text-[var(--primary)] font-bold">14.3%</div>
+                    </div>
+                    
+                    <div class="flex items-center py-2">
+                        <div class="w-1/4 font-medium text-sm">Small Cap</div>
+                        <div class="w-1/4 text-center text-[var(--primary)] font-bold">26.7%</div>
+                        <div class="w-1/4 text-center text-[var(--primary)] font-bold">19.2%</div>
+                        <div class="w-1/4 text-center text-[var(--primary)] font-bold">16.5%</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-4 rounded-lg border border-[var(--accent)]">
+                    <h3 class="font-bold text-[var(--dark)] mb-2 flex items-center">
+                        <i class="fas fa-calendar-alt text-[var(--primary)] mr-2"></i> Market Cycles Analysis
+                    </h3>
+                    <p class="text-gray-700 text-sm mb-3">Bank funds showed resilience during market downturns:</p>
+                    
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="font-medium">2018 Correction</span>
+                                <span class="text-[var(--primary)]">-8.2% vs -12.4% (Market)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[var(--primary)] h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="font-medium">2020 Pandemic</span>
+                                <span class="text-[var(--primary)]">-14.7% vs -23.1% (Market)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[var(--primary)] h-2 rounded-full" style="width: 58%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between text-sm mb-1">
+                                <span class="font-medium">2022 Recovery</span>
+                                <span class="text-[var(--primary)]">+21.3% vs +18.9% (Market)</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-[var(--primary)] h-2 rounded-full" style="width: 72%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Risk Disclosure Section -->
+            <section class="mb-8 bg-[var(--light)] p-4 rounded-lg border-l-4 border-[var(--secondary)]">
+                <h2 class="text-xl font-semibold text-[var(--darker)] mb-3 flex items-center">
+                    <i class="fas fa-exclamation-triangle text-[var(--secondary)] mr-2"></i> Risk Disclosures
+                </h2>
+                
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1 text-[var(--secondary)]">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="font-medium text-[var(--dark)]">Market Risk</h3>
+                            <p class="text-gray-700 text-sm">Mutual funds are subject to market fluctuations. Past performance doesn't guarantee future results.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1 text-[var(--secondary)]">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="font-medium text-[var(--dark)]">Expense Ratio Impact</h3>
+                            <p class="text-gray-700 text-sm">Higher expense ratios (above 1.5%) can significantly reduce long-term returns.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1 text-[var(--secondary)]">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h3 class="font-medium text-[var(--dark)]">Lock-in Periods</h3>
+                            <p class="text-gray-700 text-sm">ELSS funds have 3-year lock-in. Exit loads may apply for early redemptions in other funds.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-3 rounded border border-[var(--accent)] mt-3">
+                        <h3 class="font-bold text-[var(--dark)] text-sm mb-1">Riskometer</h3>
+                        <div class="flex justify-between text-xs text-gray-600 mb-1">
+                            <span>Low</span>
+                            <span>Moderate</span>
+                            <span>High</span>
+                            <span>Very High</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5 mb-1">
+                            <div class="bg-[var(--primary)] h-2.5 rounded-full" style="width: 65%"></div>
+                        </div>
+                        <p class="text-xs text-gray-600">Bank funds typically fall in Moderate to High risk category</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Invest Now CTA -->
+            <div class="text-center mb-6">
+                <a href="index.html" class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] hover:from-[var(--secondary)] hover:to-[var(--dark)] text-white font-bold py-3 px-8 rounded-lg inline-block smooth transform hover:scale-[1.02] shadow-lg">
+                    <i class="fas fa-rupee-sign mr-2"></i> Invest Now
+                </a>
+            </div>
+
+            <!-- Bank Comparison Section -->
+            <section id="compare" class="mb-8">
+                <h2 class="text-2xl font-semibold text-[var(--darker)] mb-4 flex items-center">
+                    <i class="fas fa-balance-scale text-[var(--primary)] mr-2"></i> Bank Fund Comparison
+                </h2>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="bg-[var(--light)] text-[var(--dark)]">
+                                <th class="p-2 text-left">Bank</th>
+                                <th class="p-2 text-center">1-Yr</th>
+                                <th class="p-2 text-center">3-Yr</th>
+                                <th class="p-2 text-center">Risk</th>
+                                <th class="p-2 text-center">Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-[var(--light)]">
+                                <td class="p-2 font-medium">SBI</td>
+                                <td class="p-2 text-center text-[var(--primary)] font-bold">18.7%</td>
+                                <td class="p-2 text-center text-[var(--primary)] font-bold">14.2%</td>
+                                <td class="p-2 text-center">Mod</td>
+                                <td class="p-2 text-center text-[var(--accent)]">★★★★☆</td>
+                            </tr>
+                            <tr class="border-b border-[var(--light)]">
+                                <td class="p-2 font-medium">HDFC</td>
+                                <td class="p-2 text-center text-[var(--primary)] font-bold">17.3%</td>
+                                <td class="p-2 text-center text-[var(--primary)] font-bold">13.5%</td>
+                                <td class="p-2 text-center">Mod-High</td>
+                                <td class="p-2 text-center text-[var(--accent)]">★★★★☆</td>
+                            </tr>
+                            <tr class="border-b border-[var(--light)]">
+                                <td class="p-2 font-medium">ICICI</td>
+                                <td class="p-2 text-center text-[var(--primary)] font-bold">16.8%</td>
+                                <td class="p-2 text-center text-[var(--primary)] font-bold">13.1%</td>
+                                <td class="p-2 text-center">Mod</td>
+                                <td class="p-2 text-center text-[var(--accent)]">★★★★☆</td>
+                            </tr>
+                            <tr class="border-b border-[var(--light)]">
+                                <td class="p-2 font-medium">Axis</td>
+                                <td class="p-2 text-center text-[var(--primary)] font-bold">19.2%</td>
+                                <td class="p-2 text-center text-[var(--primary)] font-bold">14.8%</td>
+                                <td class="p-2 text-center">High</td>
+                                <td class="p-2 text-center text-[var(--accent)]">★★★★★</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 font-medium">Kotak</td>
+                                <td class="p-2 text-center text-[var(--primary)] font-bold">17.8%</td>
+                                <td class="p-2 text-center text-[var(--primary)] font-bold">13.9%</td>
+                                <td class="p-2 text-center">Mod</td>
+                                <td class="p-2 text-center text-[var(--accent)]">★★★★☆</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-4 text-center">
+                    <a href="#" class="text-[var(--primary)] font-medium hover:text-[var(--dark)] smooth text-sm">
+                        <i class="fas fa-download mr-1"></i> Download Full Comparison Report
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-600 text-sm">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:text-[var(--primary)] smooth"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-[var(--primary)] smooth"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-[var(--primary)] smooth"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>© 2023 Bank Mutual Fund Guide. All rights reserved.</p>
+            <p class="mt-1 text-xs">Mutual fund investments are subject to market risks. Read all scheme related documents carefully before investing.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple animation for floating cards
+        const floatingCards = document.querySelectorAll('.floating-card');
+        floatingCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.2}s`;
+        });
+    </script>
+</body>
+</html>

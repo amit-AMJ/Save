@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Funds & Investment Guide</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom orange/brown theme */
+        :root {
+            --primary: #E67E22;  /* Carrot Orange */
+            --secondary: #D35400; /* Pumpkin Orange */
+            --accent: #F39C12;   /* Orange */
+            --light: #FDEBD0;    /* Light Orange */
+            --dark: #7E5109;    /* Brown */
+            --darker: #5D4037;  /* Dark Brown */
+        }
+        
+        /* Smooth transitions */
+        .smooth { transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-amber-50 font-sans">
+    <div class="container mx-auto px-4 py-8 max-w-md">
+        <!-- Enhanced Ad Space Top -->
+        <div class="bg-gradient-to-r from-[var(--light)] to-[var(--accent)] p-4 mb-6 rounded-lg text-center border border-[var(--accent)] shadow-md">
+            <p class="text-[var(--darker)] font-medium">
+                <i class="fas fa-gift text-[var(--primary)] mr-1"></i> Limited Time: Get ₹500 Amazon voucher on first SIP!
+            </p>
+        </div>
+
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-[var(--darker)] mb-2">Mutual Funds Investment</h1>
+            <p class="text-gray-600">Smart investing for every Indian</p>
+            <div class="mt-4 flex justify-center space-x-2">
+                <span class="bg-[var(--light)] text-[var(--dark)] text-xs px-2 py-1 rounded-full">
+                    <i class="fas fa-shield-alt mr-1"></i> SEBI Registered
+                </span>
+                <span class="bg-[var(--light)] text-[var(--dark)] text-xs px-2 py-1 rounded-full">
+                    <i class="fas fa-users mr-1"></i> 2M+ Investors
+                </span>
+            </div>
+        </header>
+
+        <main class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <!-- New Mutual Fund Content 1 -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-[var(--darker)] mb-4">Why Invest in Mutual Funds?</h2>
+                <div class="bg-[var(--light)] p-4 rounded-lg mb-4">
+                    <div class="flex items-start mb-3">
+                        <div class="bg-[var(--primary)] text-white p-2 rounded-full mr-3">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[var(--dark)]">Start Small, Grow Big</h3>
+                            <p class="text-gray-700 text-sm">Begin with just ₹500/month through SIP. The power of compounding can turn small regular investments into significant wealth over time.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-3">
+                        <div class="bg-[var(--primary)] text-white p-2 rounded-full mr-3">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[var(--dark)]">Beat Inflation</h3>
+                            <p class="text-gray-700 text-sm">Equity funds historically deliver 12-15% returns, helping your money grow faster than inflation which averages 6-7% in India.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-[var(--primary)] text-white p-2 rounded-full mr-3">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[var(--dark)]">Diversification</h3>
+                            <p class="text-gray-700 text-sm">A single mutual fund invests across 50-100 stocks/bonds, reducing risk compared to investing in individual securities.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Top Mutual Funds by Bank Button -->
+                <a href="funds.html" class="block bg-[var(--dark)] hover:bg-[var(--darker)] text-white font-bold py-3 px-4 rounded-lg text-center mb-6 smooth transform hover:scale-[1.02] shadow-md">
+                    <i class="fas fa-university mr-2"></i> Top Mutual Funds by Bank
+                </a>
+            </section>
+
+            <!-- New Mutual Fund Content 2 -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-[var(--darker)] mb-4">Best Performing Fund Categories</h2>
+                <div class="space-y-4">
+                    <div class="border-l-4 border-[var(--primary)] pl-4 py-2 bg-[var(--light)]">
+                        <h3 class="font-bold text-[var(--dark)] flex items-center">
+                            <i class="fas fa-trophy text-[var(--accent)] mr-2"></i> Large Cap Funds
+                        </h3>
+                        <p class="text-gray-700 text-sm">Invest in top 100 companies by market cap. 3-year average return: 14.2%. Low volatility with steady growth.</p>
+                        <div class="mt-2 text-xs text-[var(--dark)]">
+                            <span class="font-medium">Top Funds:</span> Axis Bluechip, Mirae Asset Large Cap
+                        </div>
+                    </div>
+                    <div class="border-l-4 border-[var(--accent)] pl-4 py-2 bg-[var(--light)]">
+                        <h3 class="font-bold text-[var(--dark)] flex items-center">
+                            <i class="fas fa-rocket text-[var(--accent)] mr-2"></i> Small Cap Funds
+                        </h3>
+                        <p class="text-gray-700 text-sm">Invest in smaller companies with high growth potential. 3-year average return: 18.5%. Higher risk but higher returns.</p>
+                        <div class="mt-2 text-xs text-[var(--dark)]">
+                            <span class="font-medium">Top Funds:</span> Nippon India Small Cap, SBI Small Cap
+                        </div>
+                    </div>
+                    <div class="border-l-4 border-[var(--secondary)] pl-4 py-2 bg-[var(--light)]">
+                        <h3 class="font-bold text-[var(--dark)] flex items-center">
+                            <i class="fas fa-shield-alt text-[var(--accent)] mr-2"></i> Corporate Bond Funds
+                        </h3>
+                        <p class="text-gray-700 text-sm">Invest in high-quality corporate bonds. 3-year average return: 8.2%. Lower risk than equity funds.</p>
+                        <div class="mt-2 text-xs text-[var(--dark)]">
+                            <span class="font-medium">Top Funds:</span> ICICI Prudential Corporate Bond, Franklin India Corporate Debt
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SIP Calculator Section -->
+            <section class="mb-8 bg-gradient-to-r from-[var(--light)] to-amber-100 p-4 rounded-lg border border-[var(--accent)]">
+                <h2 class="text-xl font-semibold text-[var(--darker)] mb-3">SIP Calculator</h2>
+                <div class="space-y-3">
+                    <div>
+                        <label class="block text-sm text-[var(--dark)] mb-1">Monthly Investment (₹)</label>
+                        <input type="range" min="500" max="100000" step="500" value="5000" class="w-full accent-[var(--primary)]">
+                        <div class="flex justify-between text-xs text-[var(--dark)]">
+                            <span>500</span>
+                            <span>1L</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm text-[var(--dark)] mb-1">Duration (years)</label>
+                        <input type="range" min="1" max="30" value="10" class="w-full accent-[var(--primary)]">
+                        <div class="flex justify-between text-xs text-[var(--dark)]">
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm text-[var(--dark)] mb-1">Expected Return (%)</label>
+                        <input type="range" min="8" max="20" step="0.5" value="12" class="w-full accent-[var(--primary)]">
+                        <div class="flex justify-between text-xs text-[var(--dark)]">
+                            <span>8%</span>
+                            <span>20%</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-3 rounded border border-[var(--accent)] text-center">
+                        <p class="text-sm text-gray-600">Estimated Value</p>
+                        <p class="text-xl font-bold text-[var(--primary)]">₹12,87,523</p>
+                        <p class="text-xs text-[var(--dark)]">On investment of ₹6,00,000</p>
+                    </div>
+                </div>
+                <button class="w-full bg-[var(--primary)] hover:bg-[var(--secondary)] text-white font-bold py-2 px-4 rounded mt-4 smooth">
+                    <i class="fas fa-download mr-2"></i> Download Full Report
+                </button>
+            </section>
+
+            <!-- How to Start Section -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-[var(--darker)] mb-4">How to Start Investing</h2>
+                <div class="flex items-start mb-4">
+                    <div class="bg-[var(--primary)] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-3">
+                        1
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-[var(--dark)]">Complete KYC</h3>
+                        <p class="text-gray-700 text-sm">Submit PAN, Aadhaar, and bank details. Can be done online in 10 minutes.</p>
+                    </div>
+                </div>
+                <div class="flex items-start mb-4">
+                    <div class="bg-[var(--primary)] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-3">
+                        2
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-[var(--dark)]">Choose Funds</h3>
+                        <p class="text-gray-700 text-sm">Select based on your goals, risk appetite and investment horizon.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-[var(--primary)] text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-3">
+                        3
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-[var(--dark)]">Start SIP/Lump Sum</h3>
+                        <p class="text-gray-700 text-sm">Set up automatic payments or make one-time investments.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Invest Now CTA -->
+            <div class="text-center mb-8">
+                <a href="index.html" class="bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] hover:from-[var(--secondary)] hover:to-[var(--dark)] text-white font-bold py-3 px-8 rounded-lg inline-block smooth transform hover:scale-[1.02] shadow-lg">
+                    <i class="fas fa-rupee-sign mr-2"></i> Invest Now
+                </a>
+                <p class="text-xs text-gray-500 mt-2">Get started in just 5 minutes</p>
+            </div>
+
+            <!-- Bank-wise Fund Performance -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-semibold text-[var(--darker)] mb-4">Top Performing Banks</h2>
+                <div class="space-y-3">
+                    <div class="flex items-center p-3 border border-[var(--light)] rounded-lg hover:border-[var(--accent)] smooth">
+                        <div class="bg-[var(--light)] p-2 rounded-full mr-3">
+                            <i class="fas fa-university text-[var(--dark)]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-[var(--dark)]">SBI Mutual Fund</h3>
+                            <p class="text-gray-700 text-sm">3-year return: 14.8% | 35+ funds</p>
+                        </div>
+                        <i class="fas fa-chevron-right text-[var(--primary)]"></i>
+                    </div>
+                    <div class="flex items-center p-3 border border-[var(--light)] rounded-lg hover:border-[var(--accent)] smooth">
+                        <div class="bg-[var(--light)] p-2 rounded-full mr-3">
+                            <i class="fas fa-university text-[var(--dark)]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-[var(--dark)]">HDFC Mutual Fund</h3>
+                            <p class="text-gray-700 text-sm">3-year return: 13.9% | 40+ funds</p>
+                        </div>
+                        <i class="fas fa-chevron-right text-[var(--primary)]"></i>
+                    </div>
+                    <div class="flex items-center p-3 border border-[var(--light)] rounded-lg hover:border-[var(--accent)] smooth">
+                        <div class="bg-[var(--light)] p-2 rounded-full mr-3">
+                            <i class="fas fa-university text-[var(--dark)]"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-[var(--dark)]">ICICI Prudential MF</h3>
+                            <p class="text-gray-700 text-sm">3-year return: 13.5% | 50+ funds</p>
+                        </div>
+                        <i class="fas fa-chevron-right text-[var(--primary)]"></i>
+                    </div>
+                </div>
+                <a href="top-funds.html" class="block text-center text-[var(--primary)] font-medium mt-3 hover:text-[var(--dark)] smooth">
+                    View all banks <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </section>
+
+            <!-- Tax Benefits -->
+            <section class="mb-8 bg-[var(--light)] p-4 rounded-lg">
+                <h2 class="text-xl font-semibold text-[var(--darker)] mb-3">Tax Saving Options</h2>
+                <div class="flex items-start mb-3">
+                    <div class="bg-[var(--primary)] text-white p-1 rounded mr-3">
+                        <i class="fas fa-file-invoice-dollar text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-[var(--dark)]">ELSS Funds (Section 80C)</h3>
+                        <p class="text-gray-700 text-sm">Save tax up to ₹1.5 lakh annually. 3-year lock-in period. Average returns: 12-15%.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-[var(--primary)] text-white p-1 rounded mr-3">
+                        <i class="fas fa-chart-line text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-[var(--dark)]">Long Term Capital Gains</h3>
+                        <p class="text-gray-700 text-sm">Equity funds held >1 year enjoy LTCG tax of 10% beyond ₹1 lakh gains.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Ad Space Bottom -->
+        <div class="bg-gradient-to-r from-[var(--light)] to-amber-100 p-4 rounded-lg text-center border border-[var(--accent)] mb-6">
+            <p class="text-[var(--darker)] font-medium">
+                <i class="fas fa-star text-[var(--accent)] mr-1"></i> New investors get free portfolio review worth ₹999!
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-600 text-sm">
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:text-[var(--primary)] smooth"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-[var(--primary)] smooth"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-[var(--primary)] smooth"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-[var(--primary)] smooth"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>© 2023 Mutual Fund Guide. All rights reserved.</p>
+            <p class="mt-1 text-xs">Mutual fund investments are subject to market risks. Read all scheme related documents carefully.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple animation for calculator results
+        const rangeInputs = document.querySelectorAll('input[type="range"]');
+        rangeInputs.forEach(input => {
+            input.addEventListener('input', () => {
+                // In a real implementation, this would calculate SIP returns
+                document.querySelector('.accent-[var(--primary)]').textContent = '₹' + 
+                    Math.floor(Math.random() * 500000 + 500000).toLocaleString('en-IN');
+            });
+        });
+    </script>
+</body>
+</html>
